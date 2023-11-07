@@ -16,12 +16,12 @@ const ImgGaleryMobile = (props) => {
     const handleClickPlus = ()=>{
         if (count < img_card_data.length -1)
             setCount(count+1);
-            console.log(count)
+           
     }
     const handleClickMinus= () =>{
         if (count>0)
             setCount(count-1)
-            console.log(count)
+           
     }
     const handleCurrentCount = (index) => {
         if (index !== count) {

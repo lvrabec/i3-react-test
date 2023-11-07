@@ -8,9 +8,6 @@ import { useState,useEffect } from 'react';
 import {FaBars, FaTimes} from "react-icons/fa";
 import JsonData from '../util/Brands/LocalJsonFiles/info.json';
 
-
-// POSLOŽITI ANIMACIJU ZA OTVARANJE NAVBAR-A !!!!
-
 const NavBar = () => {
     const [windowSize,setWindowSize]=useState(window.innerWidth)
     const [activate_burrger_menu,setActivateBurgerMenu]=useState(false)
@@ -103,9 +100,7 @@ const NavBar = () => {
             </ul>
         );
     }
-    const brandsList=document.getElementById('brands_list_header');
-
-
+ 
     const handleWindowSize=()=>{
         setWindowSize(window.innerWidth)
     }
@@ -123,7 +118,7 @@ const NavBar = () => {
     
     return (
         <div>
-                            {/* NAV BAR FULL  */}
+                            {/* NAVBAR FULL  */}
             <div className={nav_bar_full_size_show}>
             <ul className='nav_bar_list'>
                 <li className='list_item'><Link to='/' className='pagelink'>Our Brands</Link></li>    
@@ -131,12 +126,12 @@ const NavBar = () => {
                 <li className='list_item'><Link to='page2'className='pagelink'>Our Commitment</Link></li>
             </ul>
             </div>
-                            {/* HEADER ZA NAV BAR */}
+                            {/* HEADER ZA NAV BAR Mobile */}
             <div className={mobile_header_show}>
                 <Link to='/' className='logo_link_small'>  <img src={img1} ></img></Link>
          
             </div>
-                            {/* NAVBAR ZA MOBILE */}
+                            {/* NAVBAR ZA mobile */}
             <div className={windowSize <=750 ? 'mobile_nav_bar':'hiden'}>
                 {activate_burrger_menu == false?
                  <div className='burger_circle'>
@@ -158,17 +153,17 @@ const NavBar = () => {
                 <ul className='nav_bar_list_mobile'>
                     <li className='list_item_nav_mobile' id='brands_list_header' onClick={()=>{handleSetSubMenu_brands('Brands')}}>
                         <div className='mini_img_div'><img className='hero_img' src={hero_brands} ></img></div>
-                        {/* <Link to='/' className='pagelink'  onClick={()=>{handleSetSubMenu_brands('Brands')}}>Our Brands</Link></li> */}
+
                         <p className='text'>Our Brands</p></li>
 
-                        {/* novi kod */}
+                        
 
                         {subMenu_brands ? append_to_brands():'' }
                     <li className='list_item_nav_mobile' onClick={()=>{handleSetSubMenu_impact('Impact')}}>
                     <div className='mini_img_div'><img className='hero_img' src={hero_impact} ></img></div>
-                    {/* <Link to='page2'className='pagelink'  onClick={()=>{handleSetSubMenu_impact('Impact')}}>Our Impact</Link></li> */}
+                   
                    <p className='text'> Our Impact</p></li>
-                        {/* novi kod  */}
+                      
 
                         {subMenu_impact ? append_to_impact():''}
                 </ul>
@@ -203,11 +198,5 @@ const NavBar = () => {
 export default NavBar;
 
 
-// treba sloziti subemnu active za barnds i za impact i da se prikazu dropdowni 
-// linkove staviti na njihov page 
-// treba sloziti close buton jer ga mece sveposud 
-// treba maknuti border s img galery2 
-// treba posloziti img galery size za mobile , slike su prevelike i ne pase si nutra 
-// text isto za img galery treba posloziti jer je prevelikei font 
-// na page1 ne pada dobro img galery u mobile-u
+
 

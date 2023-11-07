@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import Json_comm from '../util/Brands/LocalJsonFiles/commitment.json';
 import '../styles/imggalery.css';
 
@@ -12,7 +12,7 @@ const ImgGalery2 = (props) => {
             Array.from(elements).forEach((each_element)=>{
                 const elementPosition = each_element.getBoundingClientRect();
                
-                if (elementPosition.top < window.innerHeight /1.255 ){
+                if (elementPosition.top < window.innerHeight /1.0 ){
                     each_element.classList.add('animation_list');
                 }
             });

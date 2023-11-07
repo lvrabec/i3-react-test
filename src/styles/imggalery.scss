@@ -1,0 +1,69 @@
+@import '../styles/variables_scss/variables.scss';
+
+.galery_main {
+
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    flex-wrap: wrap;
+
+}
+
+
+.image_container {
+
+    margin: 15px;
+    width: 100px;
+
+}
+
+.galery_main img {
+    width: 100%;
+
+}
+
+.galery_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $whitecolor;
+    margin: 15px;
+    align-items: center;
+
+
+}
+
+.galery_card:hover {
+    animation: pop_out 0.25s forwards;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+p {
+    text-transform: capitalize;
+    margin: 15px;
+
+
+}
+
+.list_paragraph {
+    font-size: 14px;
+}
+
+
+p:first-of-type {
+    color: $deep_blue;
+    font-weight: 500;
+}
+
+@keyframes pop_out {
+
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}

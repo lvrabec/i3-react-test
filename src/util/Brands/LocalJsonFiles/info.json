@@ -1,0 +1,46 @@
+{
+    "brands": [
+        {
+            "brand_id": 1,
+            "brand_name": "Braun",
+            "brand_desc": "Personal Grooming",
+            "brand_url":"https://us.braun.com/en-us/"
+        },
+        {
+            "brand_id": 2,
+            "brand_name": "Gillette",
+            "brand_desc": "Razors & Skin Care",
+            "brand_url":"https://gillette.com/"
+        },
+        {
+            "brand_id": 3,
+            "brand_name": "Old Spice",
+            "brand_desc": "Hair & Skin Care",
+            "brand_url":"https://oldspice.com/"
+        },
+        {
+            "brand_id": 4,
+            "brand_name": "Pampers",
+            "brand_desc": "Baby Diapers",
+            "brand_url":"https://www.pampers.com/en-us"
+        },
+        {
+            "brand_id": 5,
+            "brand_name": "Head & Shoulders",
+            "brand_desc": "Hair Care",
+            "brand_url":"https://headandshoulders.com/en-us"
+        },
+        {
+            "brand_id": 6,
+            "brand_name": "Ariel",
+            "brand_desc": "Laundry Products",
+            "brand_url":"https://www.ariel.co.uk/en-gb"
+        },
+        {
+            "brand_id": 7,
+            "brand_name": "Tide",
+            "brand_desc": "Laundry Products",
+            "brand_url":"https://tide.com/en-us"
+        }
+    ]
+}

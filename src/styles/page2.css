@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.page2 {
+  display: flex;
+}
+
+@media screen and (max-width: 1040px) {
+  .page2 {
+    flex-wrap: wrap;
+  }
+  .section_right {
+    order: -1;
+  }
+  .section_right img {
+    width: 350px;
+  }
+}/*# sourceMappingURL=page2.css.map */

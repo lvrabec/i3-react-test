@@ -1,0 +1,24 @@
+@import '../styles/variables_scss/variables.scss';
+
+
+.page2 {
+    display: flex;
+
+}
+
+
+@media screen and (max-width:1040px) {
+
+    .page2 {
+        flex-wrap: wrap;
+    }
+
+    .section_right {
+        order: -1;
+
+        img {
+            width: 350px;
+        }
+    }
+
+}

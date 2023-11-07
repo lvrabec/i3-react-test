@@ -1,0 +1,17 @@
+@import '../styles/variables_scss/variables.scss';
+
+
+
+.section_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.img {
+    border-radius: 35px;
+    margin: 15px 15px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}

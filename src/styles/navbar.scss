@@ -1,0 +1,251 @@
+@import "./variables_scss/variables.scss";
+
+
+.navbar {
+    width: 100%;
+    background-color: $whitecolor;
+}
+
+.nav_bar_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.list_item {
+    list-style-type: none;
+    width: 33%;
+    text-align: center;
+
+    @media screen and (max-width: 750px) {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $deep_blue;
+    font-size: 26px;
+
+
+    @media screen and (max-width: 750px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#logo_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $whitecolor;
+    height: 85px;
+}
+
+.logo {
+    height: 75px;
+    transform: translateY(25px);
+}
+
+
+
+
+
+
+.burger_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $whitecolor;
+    color: $deep_blue;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    position: fixed;
+    z-index: 1000;
+    top: 80%;
+    right: 80%;
+}
+
+#nav_bar_mobile_div {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 90vw;
+    z-index: 100000;
+    text-align: center;
+    animation: 0.75s open_animation ease-in;
+}
+
+.nav_bar_list_mobile {
+    margin-top: 20px;
+}
+
+.list_item_nav_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $deep_blue;
+    font-size: 22px;
+}
+
+.text {
+    display: inline-block;
+    position: relative;
+
+}
+
+.text:hover {
+    cursor: pointer;
+}
+
+.text::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $deep_blue;
+    transition: transform 0.25s ease;
+
+
+}
+
+
+.text:hover::after {
+    transform: scaleX(0.85);
+    transform-origin: center;
+
+}
+
+.mini_img_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px lightgray;
+    border-radius: 25px;
+    background: white;
+
+}
+
+.hero_img {
+    width: 100%;
+}
+
+.pagelink {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.esc_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $whitecolor;
+    color: $deep_blue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    position: fixed;
+    z-index: 1000;
+    top: 80%;
+    right: 15%;
+
+}
+
+.mobile_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 50px;
+    background: $whitecolor;
+
+    a {
+
+        img {
+            width: 85px;
+            margin: 15px;
+        }
+    }
+}
+
+
+
+
+.sub_list {
+    margin-left: 50px;
+    list-style-type: none;
+    animation: 0.75s drop_animation forwards;
+
+    li {
+        margin: 5px;
+
+        a {
+            font-size: 16px;
+            color: black;
+
+        }
+    }
+}
+
+.close {
+    transform: translateX(-100%);
+    transition: transform 0.75s ease-in;
+
+}
+
+
+.open {
+    transform: translateX(0);
+    transition: transform 0.75s ease-in;
+
+}
+
+
+
+@keyframes open_animation {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes close_animation {
+
+    from {
+
+        transform: translateX(0%);
+
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes drop_animation {
+    from {
+        transform: translateY(-20%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}

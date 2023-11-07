@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+body {
+  background: rgb(242, 247, 255);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hiden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

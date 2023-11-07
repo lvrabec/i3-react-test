@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.section_left {
+  font-size: 1rem;
+}
+
+.title_section_left {
+  color: rgb(0, 61, 165);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 1.9rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.title_section_left::after {
+  content: ".";
+  color: #fedb00;
+}
+
+.section_left_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main_div_for_list {
+  display: flex;
+}
+
+.list_item_galery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.animacija {
+  animation: 1.45s float_up forwards;
+}
+
+@keyframes float_up {
+  from {
+    transform: translateY(275%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 750px) {
+  .main_div_for_list {
+    display: block;
+  }
+}/*# sourceMappingURL=sectionleft.css.map */
